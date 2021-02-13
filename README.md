@@ -33,22 +33,22 @@ Pillow==7.0.0
 
 ### Designed Features
 
-| type  | name                              | domain |
-| ----- | --------------------------------- | ------ |
-| Model | $Gauss\ Fuzzing$                  | /      |
-|       | $Neuron\ Effect\ Block$           | /      |
-|       | $Neuron\ Activation\ Inverse$     | /      |
-|       | $Weights\ Shuffling$              | /      |
-| Input | $Pixel\ Gauss\ Fuzzing$           | image  |
-|       | $Pixel\ Color\ Reverse$           | image  |
-|       | $Coloring\ Pixel\ Black$          | image  |
-|       | $Coloring\ Pixel\ White$          | image  |
-|       | $Pixel\ Shuffling$                | image  |
-|       | $Character\ Shuffling$            | nlp    |
-|       | $Character\ Replacement$          | nlp    |
-|       | $Character\ Repetition$           | nlp    |
-|       | $Discrete\ Value\ Replacement$    | form   |
-|       | $Continuous\ Value\ Modification$ | form   |
+| type  | name                          | domain |
+| ----- | ------------------------------| ------ |
+| Model | Gauss  Fuzzing                | /      |
+|       | Neuron Effect Block           | /      |
+|       | Neuron Activation Inverse     | /      |
+|       | Weights Shuffling             | /      |
+| Input | Pixel Gauss Fuzzing           | image  |
+|       | Pixel Color Reverse           | image  |
+|       | Coloring Pixel Black          | image  |
+|       | Coloring Pixel White          | image  |
+|       | Pixel Shuffling               | image  |
+|       | Character Shuffling           | nlp    |
+|       | Character Replacement         | nlp    |
+|       | Character Repetition          | nlp    |
+|       | Discrete Value Replacement    | form   |
+|       | Continuous Value Modification | form   |
 
 
 
