@@ -135,8 +135,8 @@ For model mutation,  the mutation rules are  'GF','NEB','NAI','WS'
 
 'GF' 'NEB','NAI','WS' stands for $Gauss\ Fuzzing$ , $Neuron\ Effect\ Block$, $Neuron\ Activation\ Inverse$, $Weights\ Shuffling$ respectively. 
 
-```bash
-python feature_csv_conclusion.csv exp_id test_case_num domain
+```shell
+python feature_csv_conclusion.py exp_id test_case_num domain
 ```
 
 please use 'model' as the domain parameter to get model mutants features. It is generally used to get all types of model mutants (image,nlp, and predefined feature).
