@@ -79,8 +79,8 @@ Please note that you can modify the areas and pixels changing methods in select_
 After generating input mutants, you can use
 
 ```shell
-python acquire_prob.py exp_id mutation_rule test_case_num
-python feature_extraction.py exp_id mutation_rule test_case_num
+python acquire_prob.py exp_id mutation_rule
+python feature_extraction.py exp_id mutation_rule
 ```
 
 acquire_prob.py is used for predicting the probability vectors for feature extraction. test_case_num is the quantity of your dataset, we really recommend you using this parameter to guarantee this efficiency of mutation procedure. Please make sure that the exp_id, mutation_rule and test_case_num should be of consistency.
@@ -88,7 +88,7 @@ acquire_prob.py is used for predicting the probability vectors for feature extra
 After you finish extract all input mutation features, please use feature_csv_conclusion.py to get the csv file of extracted features. 
 
 ```shell
-python feature_csv_conclusion.csv exp_id test_case_num domain
+python feature_csv_conclusion.csv exp_id domain
 ```
 
 Please note that, the parameter domain has 4 choices, which is 'input','nlp','form' and 'model'. In your input mutation process, if your model-dataset pair belongs to image domain, please use 'input', if your task is in natural language domain, please use 'nlp'; if your task is in form (predefined feature)  domain, please use 'form'. Besides, if you are doing model mutation process, please use 'model'. Because each domain has its unique features and mutation rules. 
@@ -106,8 +106,8 @@ Please use  generate model mutants **BEFORE** running model_mutation_extraction.
 After generating input mutants, you can use
 
 ```shell
-python acquire_prob.py exp_id mutation_rule test_case_num
-python feature_extraction.py exp_id mutation_rule test_case_num
+python acquire_prob.py exp_id mutation_rule
+python feature_extraction.py exp_id mutation_rule
 ```
 
 acquire_prob.py is used for predicting the probability vectors for feature extraction. test_case_num is the quantity of your dataset, we really recommend you using this parameter to guarantee this efficiency of mutation procedure. Please make sure that the exp_id, mutation_rule and test_case_num should be of consistency.
@@ -115,7 +115,7 @@ acquire_prob.py is used for predicting the probability vectors for feature extra
 After you finish extract all input mutation features, please use feature_csv_conclusion.py to get the csv file of extracted features. 
 
 ```shell
-python feature_csv_conclusion.csv exp_id test_case_num domain
+python feature_csv_conclusion.csv exp_id domain
 ```
 
 Please note that, the parameter domain has 4 choices, which is 'input','nlp','form' and 'model'. In your input mutation process, if your model-dataset pair belongs to image domain, please use 'input', if your task is in natural language domain, please use 'nlp'; if your task is in form (predefined feature)  domain, please use 'form'. Besides, if you are doing model mutation process, please use 'model'. Because each domain has its unique features and mutation rules.
@@ -127,8 +127,8 @@ PLEASE note that, for convenience, we put the input mutants generation part into
 After generating model mutants, you can use input_mutation_extraction.sh to acquire model mutants.
 
 ```shell
-python prioritization.py exp_id mutation_rule test_case_num
-python model_feature_extraction.py exp_id mutation_rule test_case_num
+python prioritization.py exp_id mutation_rule
+python model_feature_extraction.py exp_id mutation_rule
 ```
 
 For model mutation,  the mutation rules are  'GF','NEB','NAI','WS'
@@ -136,7 +136,7 @@ For model mutation,  the mutation rules are  'GF','NEB','NAI','WS'
 'GF' 'NEB','NAI','WS' stands for $Gauss\ Fuzzing$ , $Neuron\ Effect\ Block$, $Neuron\ Activation\ Inverse$, $Weights\ Shuffling$ respectively. 
 
 ```shell
-python feature_csv_conclusion.py exp_id test_case_num domain
+python feature_csv_conclusion.py exp_id domain
 ```
 
 please use 'model' as the domain parameter to get model mutants features. It is generally used to get all types of model mutants (image,nlp, and predefined feature).
